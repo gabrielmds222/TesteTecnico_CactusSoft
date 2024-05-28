@@ -1,5 +1,4 @@
 const csv = require("csvtojson");
-const fs = require("fs");
 const path = require("path");
 const { faker } = require("@faker-js/faker");
 
@@ -15,7 +14,8 @@ function convertStringToDate(dateString) {
 async function main() {
   const csvFilePath = path.join(__dirname, "../src/data/clientes.csv");
   const jsonArray = await csv().fromFile(csvFilePath);
-  jsonArray.map((cliente, index) => {
+
+  jsonArray.forEach((cliente, index) => {
     jsonArray[index].conexaoInicial = convertStringToDate(
       cliente.conexaoInicial
     );
@@ -27,7 +27,11 @@ async function main() {
     jsonArray[index].consumoUpload = parseInt(cliente.consumoUpload);
     jsonArray[index].statusInternet = parseInt(cliente.statusInternet);
     jsonArray[index].valorPlano = parseFloat(cliente.valorPlano);
+
+    // Remove o campo id se existir
+    delete jsonArray[index].id;
   });
+
   await prisma.clientes.createMany({ data: jsonArray });
 }
 

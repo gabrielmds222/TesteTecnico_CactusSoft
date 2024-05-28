@@ -7,13 +7,13 @@ module.exports = {
       const clients = await findManyClientes.execute();
 
       logger.info("successfully found clients");
-      res.status(200).json(JSON.parse(clients));
+      res.status(200).json(clients);
     } catch (error) {
       if (!error.path) {
         //informa o caminho do erro se não tiver
         error.path = "src/controllers/client/findByIdClientesController.js";
       }
-      res.status(500).json({ error: error.message, path: error.path });
+      throw error;
     }
   },
 };
