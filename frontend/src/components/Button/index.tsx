@@ -2,7 +2,7 @@ interface ButtonProps {
   title: string;
 }
 
-export default function HeaderButton({ title }: ButtonProps) {
+export default function Button({ title }: ButtonProps) {
   return (
     <button
       type="submit"
