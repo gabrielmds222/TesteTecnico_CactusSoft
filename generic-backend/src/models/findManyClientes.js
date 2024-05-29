@@ -20,7 +20,7 @@ module.exports = {
 
       const clientes = await prisma.clientes.findMany({
         where,
-        take: Number(take) || 15,
+        take: Number(take) || 25,
         skip: Number(skip) || 0,
       });
 

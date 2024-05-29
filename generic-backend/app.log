@@ -91,3 +91,87 @@
 28/05/2024 15:17:30.341 [[32minfo[39m]: successfully found clients
 28/05/2024 15:18:11.328 [[32minfo[39m]: successfully found clients
 28/05/2024 15:18:59.683 [[32minfo[39m]: successfully found clients
+29/05/2024 00:12:18.678 [[31merror[39m]: path: src/models/findManyClientes.js message: 
+Invalid `prisma.clientes.findMany()` invocation in
+C:\Users\Gabriel\Projetos-dev\TesteTecnico_CactusSoft\generic-backend\src\models\findManyClientes.js:21:46
+
+  18   ],
+  19 };
+  20 
+→ 21 const clientes = await prisma.clientes.findMany({
+       where: {
+         AND: [
+           {},
+           {
+             statusCliente: {
+               contains: "true",
+               mode: "insensitive"
+             }
+           }
+         ]
+       },
+       take: 15,
+       skip: 0
+     })
+
+Unknown argument `contains`. Available options are marked with ?.
+29/05/2024 13:22:15.205 [[32minfo[39m]: successfully found clients
+29/05/2024 13:22:37.701 [[32minfo[39m]: successfully found clients
+29/05/2024 13:22:57.771 [[32minfo[39m]: successfully found clients
+29/05/2024 13:23:24.516 [[32minfo[39m]: successfully found clients
+29/05/2024 13:23:34.969 [[32minfo[39m]: successfully found clients
+29/05/2024 13:24:33.847 [[32minfo[39m]: successfully found clients
+29/05/2024 13:25:22.966 [[32minfo[39m]: successfully found clients
+29/05/2024 13:26:08.941 [[32minfo[39m]: successfully found clients
+29/05/2024 13:27:12.558 [[32minfo[39m]: successfully found clients
+29/05/2024 13:27:35.762 [[32minfo[39m]: successfully found clients
+29/05/2024 13:27:47.224 [[32minfo[39m]: successfully found clients
+29/05/2024 13:28:06.921 [[32minfo[39m]: successfully found clients
+29/05/2024 13:28:17.316 [[32minfo[39m]: successfully found clients
+29/05/2024 15:27:40.538 [[32minfo[39m]: successfully found clients
+29/05/2024 15:27:40.801 [[32minfo[39m]: successfully found clients
+29/05/2024 15:27:40.910 [[32minfo[39m]: successfully found clients
+29/05/2024 15:27:48.924 [[32minfo[39m]: successfully found clients
+29/05/2024 15:27:48.927 [[32minfo[39m]: successfully found clients
+29/05/2024 15:27:52.376 [[32minfo[39m]: successfully found clients
+29/05/2024 15:27:52.378 [[32minfo[39m]: successfully found clients
+29/05/2024 15:28:41.653 [[32minfo[39m]: successfully found clients
+29/05/2024 15:28:41.738 [[32minfo[39m]: successfully found clients
+29/05/2024 15:28:45.351 [[32minfo[39m]: successfully found clients
+29/05/2024 15:28:45.353 [[32minfo[39m]: successfully found clients
+29/05/2024 15:41:10.290 [[32minfo[39m]: successfully found clients
+29/05/2024 15:41:10.299 [[32minfo[39m]: successfully found clients
+29/05/2024 16:48:51.971 [[32minfo[39m]: successfully found clients
+29/05/2024 16:48:52.056 [[32minfo[39m]: successfully found clients
+29/05/2024 16:48:56.341 [[32minfo[39m]: successfully found clients
+29/05/2024 16:48:56.343 [[32minfo[39m]: successfully found clients
+29/05/2024 16:50:11.496 [[32minfo[39m]: successfully found clients
+29/05/2024 16:50:11.573 [[32minfo[39m]: successfully found clients
+29/05/2024 16:50:15.803 [[32minfo[39m]: successfully found clients
+29/05/2024 16:50:15.807 [[32minfo[39m]: successfully found clients
+29/05/2024 16:57:44.368 [[32minfo[39m]: successfully found clients
+29/05/2024 16:57:44.443 [[32minfo[39m]: successfully found clients
+29/05/2024 16:57:48.133 [[32minfo[39m]: successfully found clients
+29/05/2024 16:57:48.135 [[32minfo[39m]: successfully found clients
+29/05/2024 16:58:09.069 [[32minfo[39m]: successfully found clients
+29/05/2024 16:58:09.130 [[32minfo[39m]: successfully found clients
+29/05/2024 16:58:44.421 [[32minfo[39m]: successfully found clients
+29/05/2024 16:58:44.490 [[32minfo[39m]: successfully found clients
+29/05/2024 17:01:19.463 [[32minfo[39m]: successfully found clients
+29/05/2024 17:01:19.538 [[32minfo[39m]: successfully found clients
+29/05/2024 17:11:17.619 [[32minfo[39m]: successfully found clients
+29/05/2024 17:11:44.098 [[32minfo[39m]: successfully found clients
+29/05/2024 17:11:44.100 [[32minfo[39m]: successfully found clients
+29/05/2024 17:11:59.947 [[32minfo[39m]: successfully found clients
+29/05/2024 17:12:00.012 [[32minfo[39m]: successfully found clients
+29/05/2024 17:14:54.464 [[32minfo[39m]: successfully found clients
+29/05/2024 17:15:21.301 [[32minfo[39m]: successfully found clients
+29/05/2024 17:15:24.430 [[32minfo[39m]: successfully found clients
+29/05/2024 17:15:24.433 [[32minfo[39m]: successfully found clients
+29/05/2024 17:15:26.085 [[32minfo[39m]: successfully found clients
+29/05/2024 17:15:26.086 [[32minfo[39m]: successfully found clients
+29/05/2024 17:15:34.909 [[32minfo[39m]: successfully found clients
+29/05/2024 17:15:34.971 [[32minfo[39m]: successfully found clients
+29/05/2024 17:15:44.848 [[32minfo[39m]: successfully found clients
+29/05/2024 17:45:25.587 [[32minfo[39m]: successfully found clients
+29/05/2024 17:45:25.679 [[32minfo[39m]: successfully found clients
